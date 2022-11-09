@@ -1,20 +1,77 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      margret weather app
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="main">
+    <span class="city"> Pretoria</span>
+    <span class="date"> Tues , 15: 05pm</span>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="icon">
+      <img src="../../assets/icon/favicon.png" alt="">
+    </div>
+
+    <span class="description"> Cloudy</span>
+    <span class="description">21 o C</span>
   </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="day">Sun</ion-col>
+      <ion-col class="day">Mon</ion-col>
+      <ion-col class="day">Tues</ion-col>
+      <ion-col class="day">Wed</ion-col>
+      <ion-col class="day">Thurs</ion-col>
+      <ion-col class="day">Fri</ion-col>
+      <ion-col class="day">Sat</ion-col>
+    </ion-row>
+    <!-- day 7-->
+    <div>
+      <ion-row>
+        <ion-row class="precip">20%</ion-row>
+        <ion-row class="precip">0%</ion-row>
+        <ion-row class="precip">-</ion-row>
+        <ion-row class="precip">-</ion-row>
+        <ion-row class="precip">80%</ion-row>
+        <ion-row class="precip">-</ion-row>
+        <ion-row class="precip">20%</ion-row>
+      </ion-row>
+    </div>
+    <ion-row>
+      <ion-col class="icon-imgs"><img src="../../assets/icon/favicon.png" alt=""></ion-col>
+      <ion-col class="icon-imgs"><img src="../../assets/icon/favicon.png" alt=""></ion-col>
+      <ion-col class="icon-imgs"><img src="../../assets/icon/favicon.png" alt=""></ion-col>
+      <ion-col class="icon-imgs"><img src="../../assets/icon/favicon.png" alt=""></ion-col>
+      <ion-col class="icon-imgs"><img src="../../assets/icon/favicon.png" alt=""></ion-col>
+      <ion-col class="icon-imgs"><img src="../../assets/icon/favicon.png" alt=""></ion-col>
+      <ion-col class="icon-imgs"><img src="../../assets/icon/favicon.png" alt=""></ion-col>
+    </ion-row>
+    <div>
+      <ion-row>
+        <ion-col class="max-temp">10c</ion-col>
+        <ion-col class="max-temp">30c</ion-col>
+        <ion-col class="max-temp">0c</ion-col>
+        <ion-col class="max-temp">15c</ion-col>
+        <ion-col class="max-temp">2c</ion-col>
+        <ion-col class="max-temp">16c</ion-col>
+        <ion-col class="max-temp">1c</ion-col>
+      </ion-row>
+    </div>
+
+    <div>
+      <ion-row>
+        <ion-col class="min-temp">0c</ion-col>
+        <ion-col class="min-temp">20c</ion-col>
+        <ion-col class="min-temp">10c</ion-col>
+        <ion-col class="min-temp">0c</ion-col>
+        <ion-col class="min-temp">40c</ion-col>
+        <ion-col class="min-temp">19c</ion-col>
+        <ion-col class="min-temp">0c</ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
 </ion-content>
